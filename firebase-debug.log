@@ -1,0 +1,75 @@
+[debug] [2024-04-08T22:16:49.749Z] ----------------------------------------------------------------------
+[debug] [2024-04-08T22:16:49.754Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nh246\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-08T22:16:49.754Z] CLI Version:   13.7.1
+[debug] [2024-04-08T22:16:49.754Z] Platform:      win32
+[debug] [2024-04-08T22:16:49.754Z] Node Version:  v19.8.1
+[debug] [2024-04-08T22:16:49.755Z] Time:          Tue Apr 09 2024 03:46:49 GMT+0530 (India Standard Time)
+[debug] [2024-04-08T22:16:49.755Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-08T22:16:49.758Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-04-08T22:16:49.947Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-08T22:16:49.948Z] > authorizing via signed-in user (dhanuraja70@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\nh246\Desktop\githubnew\NetflixGpt\netflix-gpt
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-04-08T22:16:50.740Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-04-08T22:16:50.741Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-04-08T22:17:34.738Z] ----------------------------------------------------------------------
+[debug] [2024-04-08T22:17:34.741Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nh246\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-04-08T22:17:34.741Z] CLI Version:   13.7.1
+[debug] [2024-04-08T22:17:34.742Z] Platform:      win32
+[debug] [2024-04-08T22:17:34.742Z] Node Version:  v19.8.1
+[debug] [2024-04-08T22:17:34.742Z] Time:          Tue Apr 09 2024 03:47:34 GMT+0530 (India Standard Time)
+[debug] [2024-04-08T22:17:34.743Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-08T22:17:34.867Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-08T22:17:34.867Z] > authorizing via signed-in user (dhanuraja70@gmail.com)
+[debug] [2024-04-08T22:17:34.868Z] [iam] checking project netflixgpt-7faff for permissions ["firebase.projects.get"]
+[debug] [2024-04-08T22:17:34.869Z] > refreshing access token with scopes: []
+[debug] [2024-04-08T22:17:34.871Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-08T22:17:34.871Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-08T22:17:35.176Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-08T22:17:35.177Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-08T22:17:35.191Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-7faff:testIamPermissions [none]
+[debug] [2024-04-08T22:17:35.191Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-7faff:testIamPermissions x-goog-quota-user=projects/netflixgpt-7faff
+[debug] [2024-04-08T22:17:35.192Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-7faff:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-08T22:17:37.067Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-7faff:testIamPermissions 200
+[debug] [2024-04-08T22:17:37.067Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflixgpt-7faff:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-08T22:17:37.070Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff [none]
+[debug] [2024-04-08T22:17:37.769Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff 200
+[debug] [2024-04-08T22:17:37.769Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff {"projectId":"netflixgpt-7faff","projectNumber":"487393028077","displayName":"NetflixGPT","name":"projects/netflixgpt-7faff","resources":{"hostingSite":"netflixgpt-7faff"},"state":"ACTIVE","etag":"1_e0e327d0-5c70-4c7f-8b2d-f015ddb9a06e"}
+[info] 
+[info] === Serving from 'C:\Users\nh246\Desktop\githubnew\NetflixGpt\netflix-gpt'...
+[info] 
+[debug] [2024-04-08T22:17:37.779Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflixgpt-7faff/sites 
+[debug] [2024-04-08T22:17:38.939Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflixgpt-7faff/sites 200
+[debug] [2024-04-08T22:17:38.939Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflixgpt-7faff/sites {"sites":[{"name":"projects/netflixgpt-7faff/sites/netflixgpt-7faff","defaultUrl":"https://netflixgpt-7faff.web.app","appId":"1:487393028077:web:3e85060f818ce8a316e9e4","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-08T22:17:38.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff/webApps/1:487393028077:web:3e85060f818ce8a316e9e4/config [none]
+[debug] [2024-04-08T22:17:40.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff/webApps/1:487393028077:web:3e85060f818ce8a316e9e4/config 200
+[debug] [2024-04-08T22:17:40.063Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff/webApps/1:487393028077:web:3e85060f818ce8a316e9e4/config {"projectId":"netflixgpt-7faff","appId":"1:487393028077:web:3e85060f818ce8a316e9e4","storageBucket":"netflixgpt-7faff.appspot.com","apiKey":"AIzaSyCDZaVf9y6sQEEOjEbVfHyv4qDf_ZdsEEU","authDomain":"netflixgpt-7faff.firebaseapp.com","messagingSenderId":"487393028077","measurementId":"G-SF3W3G2WS4"}
+[debug] [2024-04-08T22:17:40.071Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff [none]
+[debug] [2024-04-08T22:17:40.624Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff 200
+[debug] [2024-04-08T22:17:40.625Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflixgpt-7faff {"projectId":"netflixgpt-7faff","projectNumber":"487393028077","displayName":"NetflixGPT","name":"projects/netflixgpt-7faff","resources":{"hostingSite":"netflixgpt-7faff"},"state":"ACTIVE","etag":"1_e0e327d0-5c70-4c7f-8b2d-f015ddb9a06e"}
+[info] i  hosting[netflixgpt-7faff]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[netflixgpt-7faff]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:18:41 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:18:41 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:18:41 +0000] "GET /static/css/main.f8ae2469.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:18:41 +0000] \"GET /static/css/main.f8ae2469.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:18:41 +0000] "GET /static/js/main.3d2c3ad6.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:18:41 +0000] \"GET /static/js/main.3d2c3ad6.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:18:41 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:18:41 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:18:41 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:18:41 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:18:41 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:18:41 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:19:10 +0000] "GET /static/css/main.f8ae2469.css.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:19:10 +0000] \"GET /static/css/main.f8ae2469.css.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:19:10 +0000] "GET /static/js/main.3d2c3ad6.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:19:10 +0000] \"GET /static/js/main.3d2c3ad6.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [08/Apr/2024:22:29:43 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [08/Apr/2024:22:29:43 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\""}}

@@ -14,6 +14,12 @@
 - create Sign out user account
 - Update user profile
 - fetch tmdb movie
+- Register TMDB API & create an App get access token
+- Get Data From NowPlayingMovies List API 
+- Custom Hook fro Now Playing Movies
+- create movies list
+- update store movies data
+
 
 
 

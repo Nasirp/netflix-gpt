@@ -1,17 +1,17 @@
 import React, { useRef, useState } from 'react'
 import Header from "./Header"
 import { checkValidate } from '../utils/validate';
-import {useNavigate} from "react-router-dom";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword,  updateProfile } from 'firebase/auth';
 import {auth} from "../utils/firebase";
 import {useDispatch} from "react-redux";
 import { addUser } from '../utils/userSlice';
+import { BackgroundImg, Profile } from '../utils/constant';
 // import { set } from 'firebase/database';
  
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errotMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
+  
   const name = useRef(null);
   const email = useRef(null);
    const password = useRef(null);
@@ -41,7 +41,7 @@ const Login = () => {
     const user = userCredential.user;
     updateProfile(user, {
       displayName: name.current.value, 
-      photoURL: "https://avatars.githubusercontent.com/u/89035202?s=400&u=3b1fc0ebd49d653f32689edd31b10fa3b060cae4&v=4"
+      photoURL: Profile
     }).then(() => {
       // Profile updated!
       const {uid, email,displayName,photoURL} = auth.currentUser;
@@ -51,16 +51,16 @@ const Login = () => {
       email:email,
       photoURL:photoURL
      }))
-      navigate("/browse")
+     
       // ...
     }).catch((error) => {
       // An error occurred
       setErrorMessage(error.message)
       // ...
     });
-    console.log(user);
+    // console.log(user);
     // ...
-    navigate("/Browse");
+   
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -76,8 +76,7 @@ const Login = () => {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    console.log(user);
-    navigate("/Browse");
+    
     // ...
   })
   .catch((error) => {
@@ -97,7 +96,7 @@ const Login = () => {
       <div className='absolute'>
         <img
 
-         src='https://assets.nflxext.com/ffe/siteui/vlv3/7ca5b7c7-20aa-42a8-a278-f801b0d65fa1/fb548c0a-8582-43c5-9fba-cd98bf27452f/IN-en-20240326-popsignuptwoweeks-perspective_alpha_website_large.jpg'
+         src={BackgroundImg}
          alt='logo'
          />
       </div>
