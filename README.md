@@ -19,6 +19,13 @@
 - Custom Hook fro Now Playing Movies
 - create movies list
 - update store movies data
+- create custom hooks
+- made the Browser page amazing using tailwind css
+- use popular movies custom hooks
+- GPT search page
+- GPT search bar
+- multi language Feature in our app
+
 
 
 

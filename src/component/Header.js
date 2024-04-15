@@ -6,14 +6,16 @@ import { auth } from "../utils/firebase";
 import {useNavigate} from "react-router-dom"
 import {useSelector,useDispatch} from "react-redux"
 import { addUser, removeUser } from "../utils/userSlice";
-import { LOGO } from "../utils/constant";
+import { LOGO, SUPORTED_LANGUAGES } from "../utils/constant";
+import { toggleGptSearchView } from "../utils/gptSlice";
+import { changeLanguage } from "../utils/configSlice";
 
 
 const Header = () => {
   const navigate = useNavigate();
   const user = useSelector((store) =>store.user);
  const dispatch = useDispatch();
-
+ const showGptSearch = useSelector((store)=> store.gpt.showGptSearch)
  const handleSignOut = () =>{
   signOut(auth).then(() => {
     // Sign-out successful.
@@ -39,13 +41,18 @@ const Header = () => {
       navigate("/");
     }
   });
+  
   return () => unsubscribe()
- },[]);
+ }, []);
 
+ 
 
  const handleGptSearch = () =>{
-  
+   dispatch(toggleGptSearchView());
  }
+ const handleLanguageChange = (e) =>{
+      dispatch(changeLanguage(e.target.value));
+}
 
   return (
     <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
@@ -55,18 +62,31 @@ const Header = () => {
        alt='logo'
        />
      
-
-       {user &&(
+        
+       {
+        //use user && because when user is present the show the header
+        user &&
+        
+        (
        <div className=" flex p-4">
-       <button className="py-2 px-6 my-2 mx-10 bg-purple-800 text-white rounded-lg"
+       { showGptSearch &&
+       <select className="p-2 m-2 bg-gray-500 rounded-lg text-white" onChange={handleLanguageChange}>
+        {SUPORTED_LANGUAGES.map((lang)=>(
+          <option key={lang.identifire} value={lang.identifire}>{lang.name}</option>
+        ))}
+       </select>
+       }
+       <button className="py-2 px-4 my-2 mx-4 bg-purple-800 text-white rounded-lg"
          onClick={handleGptSearch}
-         >GPT Search</button>
+         >
+        { showGptSearch ? "Home Page" : "GPT Search"}
+         </button>
         <Tippy 
            theme="light" 
-           content={<h1 className="text-red-600 cursor-pointer" onClick={handleSignOut}>Log out</h1>} 
+           content={<h1 className="text-orange-500 cursor-pointer" onClick={handleSignOut}>Log out</h1>} 
            interactive={true}>
           
-            <button className="px-4">
+            <button className="px-4 text-red-600">
             <LogoutIcon/>
             
             </button>

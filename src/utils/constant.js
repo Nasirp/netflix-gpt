@@ -9,3 +9,15 @@ export const API_OPTIONS =  {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNDcwN2MwNjllNmExOWFlZjdlZTMwYzhjYzVhYWU5YSIsInN1YiI6IjY2MTYxYTA5NGRhM2Q0MDE4NDE1MDNjNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.InIgALKFm3eGii9eC-Bq0OLmYulArHQ1Q0SaFmw5bbk'
     }
   };
+
+  export const IMG_CDN = "https://image.tmdb.org/t/p/w500";
+  export const PROXY_URL= "https://corsproxy.io/?";
+  export const MOVIES_URL ='https://api.themoviedb.org/3/movie/now_playing?page=1';
+  export const POPULAR_URL = 'https://api.themoviedb.org/3/movie/popular?page=1';
+  export const TOPRATED_URL = 'https://api.themoviedb.org/3/movie/top_rated?page=1';
+  export const UPCOMING_URL = 'https://api.themoviedb.org/3/movie/upcoming?page=1';
+  export const SUPORTED_LANGUAGES = [
+                                      {identifire: "en", name:"English"},
+                                      {identifire: "hindi", name:"Hindi"},
+                                      {identifire: "spenise", name:"Spenise"},
+                                    ];

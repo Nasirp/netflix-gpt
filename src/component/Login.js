@@ -58,7 +58,7 @@ const Login = () => {
       setErrorMessage(error.message)
       // ...
     });
-    // console.log(user);
+   
     // ...
    
   })
@@ -95,14 +95,14 @@ const Login = () => {
       <Header/>
       <div className='absolute'>
         <img
-
+         className='w-screen h-screen'
          src={BackgroundImg}
          alt='logo'
          />
       </div>
       <form 
       onSubmit={(e) => e.preventDefault()}
-      className='absolute w-3/12 p-12 bg-black text-white my-36 mx-auto right-0 left-0 bg-opacity-80'>
+      className='absolute w-80 p-6 bg-black text-white my-36 mx-auto right-0 left-0 bg-opacity-80'>
 
         <h1 className='text-white my-2 text-lg font-bold'>
 
