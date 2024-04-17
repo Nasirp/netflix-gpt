@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
 import GptSearBar from './GptSearBar'
 // import GptSuggetion from './GptSuggetion'
-import { BackgroundImg, OPTION1, YOUTUBE_API } from '../utils/constant'
+import { BackgroundImg } from '../utils/constant'
 
 const GptSearch = ({data}) => {
  

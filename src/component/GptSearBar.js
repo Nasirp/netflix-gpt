@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import lang from "../utils/languageConstant";
 import { useSelector } from 'react-redux';
 import openai from "../utils/openAi";
-import { BackgroundImg } from '../utils/constant';
 const GptSearBar = () => {
     const searchText = useRef(null);
     const langKey = useSelector((store) => store.config.lang);
