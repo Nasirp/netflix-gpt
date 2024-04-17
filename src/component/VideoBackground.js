@@ -8,7 +8,7 @@ const VideoBackground = ({movieId}) => {
    useMovieTrailer(movieId);
   
   return (
-    <div>
+    <div >
      {/* <iframe 
       className="w-screen  aspect-video"
        src={"https://www.youtube.com/embed/"+ trailerVideo?.key +" ?&autoplay=1&mute=1"}
@@ -16,7 +16,7 @@ const VideoBackground = ({movieId}) => {
        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
        ></iframe> */}
        <iframe
-        className="w-screen  aspect-video"
+        className="w-full aspect-video"
         src={"https://www.youtube.com/embed/Way9Dexny3w?si=mIBgkkb3b7J4CVL9" + trailerVideo?.key +" ?&autoplay=1&mute=1"}
         title="YouTube video player" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
