@@ -55,9 +55,9 @@ const Header = () => {
 }
 
   return (
-    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
+    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between '>
       <img
-      className='w-44'
+      className='w-44 mx-auto md:mx-0'
        src={LOGO}
        alt='logo'
        />
@@ -66,9 +66,8 @@ const Header = () => {
        {
         //use user && because when user is present the show the header
         user &&
-        
         (
-       <div className=" flex p-4">
+       <div className=" flex p-2">
        { showGptSearch &&
        <select className="p-2 m-2 bg-gray-500 rounded-lg text-white" onChange={handleLanguageChange}>
         {SUPORTED_LANGUAGES.map((lang)=>(
@@ -80,13 +79,14 @@ const Header = () => {
          onClick={handleGptSearch}
          >
         { showGptSearch ? "Home Page" : "GPT Search"}
+        
          </button>
         <Tippy 
            theme="light" 
            content={<h1 className="text-orange-500 cursor-pointer" onClick={handleSignOut}>Log out</h1>} 
            interactive={true}>
           
-            <button className="px-4 text-red-600">
+            <button className=" px-4 text-red-600">
             <LogoutIcon/>
             
             </button>

@@ -21,3 +21,13 @@ export const API_OPTIONS =  {
                                       {identifire: "hindi", name:"Hindi"},
                                       {identifire: "spenise", name:"Spenise"},
                                     ];
+
+  export const OPENAI_KEY = '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';
+   export const OPTION1 =  {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '64449c0716msh012002992f520c6p1c27ebjsn08e0fc09a8e7',
+      'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+    }
+  };
+  export const YOUTUBE_API ='https://youtube138.p.rapidapi.com/playlist/videos/?id=PLcirGkCPmbmFeQ1sm4wFciF03D_EroIfr&hl=en&gl=US';

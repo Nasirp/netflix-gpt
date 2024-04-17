@@ -25,6 +25,10 @@
 - GPT search page
 - GPT search bar
 - multi language Feature in our app
+- use platform.openai.com 
+- create NetflixGptProject APIKey
+- npm install --save openai
+- 
 
 
 
