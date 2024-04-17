@@ -1,20 +1,20 @@
 import React, { useRef } from 'react';
 import lang from "../utils/languageConstant";
 import { useSelector } from 'react-redux';
-import openai from "../utils/openAi";
+// import openai from "../utils/openAi";
 const GptSearBar = () => {
     const searchText = useRef(null);
     const langKey = useSelector((store) => store.config.lang);
 
-    const handleGptSearchClick = async()=>{
+    const handleGptSearchClick = ()=>{
       // console.log(searchText.current.value);
       
-      const gptQuery = "act as a movie recommendation system and suggest some movies for the query "+
-                        searchText.current.value + ". only gives me names of 5 movies, comma seperated like the example result  given ahead. Example Result: Gadar, Don, Tere Nam, Dhadkan, Veer";
-      const gptResults = await openai.chat.completions.create({
-        messages: [{ role: 'user',content: gptQuery }],
-        model: 'gpt-3.5-turbo',
-      });
+      // const gptQuery = "act as a movie recommendation system and suggest some movies for the query "+
+      //                   searchText.current.value + ". only gives me names of 5 movies, comma seperated like the example result  given ahead. Example Result: Gadar, Don, Tere Nam, Dhadkan, Veer";
+      // const gptResults = await openai.chat.completions.create({
+      //   messages: [{ role: 'user',content: gptQuery }],
+      //   model: 'gpt-3.5-turbo',
+      // });
     
       // console.log(gptResults.choices);
 
