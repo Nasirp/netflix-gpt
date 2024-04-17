@@ -52,5 +52,3 @@ Login/SignUp
       - Movie Suggetions
 
 
-
-# App_URL = https://netflixgpt-7faff.web.app
